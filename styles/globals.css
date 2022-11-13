@@ -30,6 +30,45 @@ a {
   }
 }
 
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* Link underlining animation */
 .link-underline {
   border-bottom-width: 0;
@@ -47,4 +86,41 @@ a {
 .link-underline:hover {
   background-size: 100% 3px;
   background-position: 0 100%
+}
+
+#circle {
+  fill: rgb(255, 0, 0);
+}
+
+#mySVG {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  height: 100vh;
+  margin-left: -50px;
+}
+
+.st0 {
+  fill: none;
+  stroke-dashoffset: 3px;
+  stroke: red;
+  stroke-width: 20;
+  stroke-miterlimit: 10;
+  stroke-dasharray: 20;
+}
+
+.progressMainWrapper {
+  background-color: black;
+  height: 15px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.progressMainStyle {
+  heigth: 15px;
+  background-color: aqua;
+  width: 15%;
 }
