@@ -85,7 +85,6 @@ export default function Landing() {
         <ParallaxLayer
           offset={0}
           speed={0.1}
-          onClick={() => parallax.current.scrollTo(1)}
           style={{
             display: 'flex',
             alignItems: 'center',
@@ -94,8 +93,12 @@ export default function Landing() {
           }}>
             <div className="flex flex-col content-center justify-center pt-12">
               <div className="flex content-center justify-center pt-12 w-[100%]">
-                <button className="w-[20vh] lg:w-[50vh] h-[100px] bg-blue-400 hover:bg-blue-600 rounded-3xl text-white text-3xl m-10" onClick={() => console.log("Hi")}>Github</button>
-                <button className="w-[20vh] lg:w-[50vh] h-[100px] bg-blue-400 hover:bg-blue-600 rounded-3xl text-white text-3xl m-10" onClick={() => console.log("Hi")}>About Us</button>
+                <Link href="https://github.com/GRight-Hackathon/frontend">
+                  <button className="w-[20vh] lg:w-[50vh] h-[100px] bg-blue-400 hover:bg-blue-600 rounded-3xl text-white text-3xl m-10" onClick={() => console.log("Hi")}>Github</button>
+                </Link>
+                <Link href="/aboutus">
+                  <button className="w-[20vh] lg:w-[50vh] h-[100px] bg-blue-400 hover:bg-blue-600 rounded-3xl text-white text-3xl m-10" onClick={() => console.log("Hi")}>About Us</button>
+                </Link>
               </div>
             </div>
         </ParallaxLayer>

@@ -14,7 +14,7 @@ const center = {
     lng: 103.8198
 };
 
-export default function Map() {
+export default function AboutUs() {
     const { isLoaded } = useJsApiLoader({ // have to reload the webpage server everytime this is changed
         id: 'google-map-script',
         googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
@@ -72,28 +72,10 @@ export default function Map() {
     return isLoaded ? (
         <>
             <NavBar></NavBar>
+            <h1>THIS IS THIS ABOUTUS PAGE</h1>
             <div className='pl-20 pr-20 pt-10 grid place-items-center'>
                 <div className='border-black border-8 rounded-lg w-fit'>
-                <GoogleMap
-                    mapContainerStyle={containerStyle}
-                    center={center}
-                    zoom={13}
-                    options={{
-                        zoomControl: false,
-                        streetViewControl: false,
-                        mapTypeControl: false,
-                        fullscreenControl: false,
-                    }}
-                    onLoad={map => setMap(map)}
-                >
-                    { /* Child components, such as markers, info windows, etc. */ }
-                    <>
-                        <Marker position={center} />
-                        {directionsResponse && (
-                            <DirectionsRenderer directions={directionsResponse} />
-                        )}
-                    </>
-                </GoogleMap>
+                
                 </div>
             </div>
             <div>
@@ -125,3 +107,4 @@ export default function Map() {
             </Body>
         </>
 }
+
