@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../public/images/logo_transparent.png"
+import logo from "../public/logo_transparent.png"
 import { useRouter } from 'next/router'
 import { useState, useEffect } from "react";
 

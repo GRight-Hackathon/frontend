@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
+import Link from "next/link";
 
 import Image from 'next/image';
 
@@ -23,7 +24,9 @@ export default function Landing() {
 
         <ParallaxLayer offset={1.24} speed={0.8} style={{ zIndex: 2}}>
           <div className="flex content-center justify-center pt-12">
-            <button className="w-3/4 h-[100px] bg-blue-400 hover:bg-blue-600 rounded-3xl text-white text-3xl" onClick={() => console.log("Hi")}>Get Started!</button>
+            <Link href="/map">
+              <button className="w-3/4 h-[100px] bg-blue-400 hover:bg-blue-600 rounded-3xl text-white text-3xl" onClick={() => console.log("Hi")} href="/map">Get Started!</button>
+            </Link>
           </div>
           <div className="flex content-center justify-center pt-12">
             <p className="text-white" >adisbduasbdl</p>
