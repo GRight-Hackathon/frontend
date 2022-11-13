@@ -1,5 +1,5 @@
 import React from 'react'
-import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
+import { GoogleMap, useJsApiLoader, Marker, DirectionsRenderer, Autocomplete } from '@react-google-maps/api';
 
 import Body from '../components/Body';
 import NavBar from '../components/NavBar';
@@ -15,24 +15,59 @@ const center = {
 };
 
 function MyComponent() {
-    const { isLoaded } = useJsApiLoader({
+    const { isLoaded } = useJsApiLoader({ // have to reload the webpage server everytime this is changed
         id: 'google-map-script',
-        googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY
+        googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+        libraries: ['places']
     })
 
-    const [map, setMap] = React.useState(null)
+    const [map, setMap] = React.useState(/** @type google.maps.Map */ (null))
+    const [directionsResponse, setDirectionsResponse] = React.useState(null)
+    const [distance, setDistance] = React.useState('')
+    const [duration, setDuration] = React.useState('')
 
-    const onLoad = React.useCallback(function callback(map) {
-        // This is just an example of getting and using the map instance!!! don't just blindly copy!
-        const bounds = new window.google.maps.LatLngBounds(center);
-        map.fitBounds(bounds);
+    /** @type React.MutableRefObject<HTMLInputElement> */
+    const originRef = React.useRef()
+    /** @type React.MutableRefObject<HTMLInputElement> */
+    const destiantionRef = React.useRef()
 
-        setMap(map)
-    }, [])
+    async function calculateRoute() {
+        if (originRef.current.value === '' || destiantionRef.current.value === '') {
+          return
+        }
+        // eslint-disable-next-line no-undef
+        const directionsService = new google.maps.DirectionsService()
+        const results = await directionsService.route({
+          origin: originRef.current.value,
+          destination: destiantionRef.current.value,
+          // eslint-disable-next-line no-undef
+          travelMode: google.maps.TravelMode.DRIVING,
+        })
+        
+        //console.log(results)
 
-    const onUnmount = React.useCallback(function callback(map) {
-        setMap(null)
-    }, [])
+        let steps = results.routes[0].legs[0].steps;
+        let leftTurnOnlyResults = []
+        for (let i = 0; i < steps.length; i++) {
+            if (steps[i].maneuver.includes('left')) {
+                leftTurnOnlyResults.push(steps[i]);
+            }
+        }
+        //console.log(leftTurnOnlyResults)
+        results.routes[0].legs[0].steps = leftTurnOnlyResults
+        setDirectionsResponse(results)
+        
+        setDistance(results.routes[0].legs[0].distance.text)
+        setDuration(results.routes[0].legs[0].duration.text)
+    }
+
+    function clearRoute() {
+        setDirectionsResponse(null)
+        setDistance('')
+        setDuration('')
+        originRef.current.value = ''
+        destiantionRef.current.value = ''
+    }
 
     return isLoaded ? (
         <>
@@ -42,15 +77,43 @@ function MyComponent() {
                 <GoogleMap
                     mapContainerStyle={containerStyle}
                     center={center}
-                    zoom={10}
-                    onLoad={onLoad}
-                    onUnmount={onUnmount}
+                    zoom={13}
+                    options={{
+                        zoomControl: false,
+                        streetViewControl: false,
+                        mapTypeControl: false,
+                        fullscreenControl: false,
+                    }}
+                    onLoad={map => setMap(map)}
                 >
                     { /* Child components, such as markers, info windows, etc. */ }
                     <>
+                        <Marker position={center} />
+                        {directionsResponse && (
+                            <DirectionsRenderer directions={directionsResponse} />
+                        )}
                     </>
                 </GoogleMap>
                 </div>
+            </div>
+            <div>
+                <Autocomplete>
+                <input type='text' placeholder='Origin' className='text-white' ref={originRef} />
+                </Autocomplete>
+                <Autocomplete>
+                <input type='text' placeholder='Destination' className='text-white' ref={destiantionRef} />
+                </Autocomplete>
+                <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" onClick={calculateRoute}>
+                    Calculate Route
+                </button>
+                <text>Distance: {distance} </text>
+                <text>Duration: {duration} </text>
+                <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" onClick={clearRoute}>
+                    Clear Route
+                </button>
+                <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded" onClick={() => {map.panTo(center); map.setZoom(13)}}>
+                    Center Position
+                </button>
             </div>
         </>
     ) : <>
