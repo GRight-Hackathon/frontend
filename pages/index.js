@@ -1,11 +1,10 @@
 import Head from 'next/head'
-import Image from 'next/image'
-
-import NavBar from '../components/NavBar'
-import Body from '../components/Body'
-import Carousel from '../components/Carousell'
+import { useRef } from 'react';
+import Landing from '../components/Landing';
 
 export default function Home() {
+  const ref = useRef();
+
   return (
       <div>
         <Head>
@@ -14,13 +13,7 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <NavBar></NavBar>
-        <Body className="flex flex-col items-center">
-          <h1 className="text-1xl m-10 md:text-5xl">
-            Home page
-          </h1>
-          <Carousel></Carousel>
-        </Body>
+        <Landing></Landing>
       </div>
   )
 }
