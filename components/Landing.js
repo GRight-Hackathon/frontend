@@ -83,8 +83,8 @@ export default function Landing() {
               </p>
               <p className=' font-extrabold text-xl lg:text-lg text-white m-5'>
               Saving your fuel by going in the &nbsp; 
-              <span class="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-orange-500 relative inline-block">
-                <span class="relative text-white">right direction…</span>
+              <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-orange-500 relative inline-block">
+                <span className="relative text-white">right direction…</span>
               </span>
                <br/> always turning left!
               </p>
