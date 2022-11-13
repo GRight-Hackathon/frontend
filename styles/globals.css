@@ -88,39 +88,59 @@ a {
   background-position: 0 100%
 }
 
-#circle {
-  fill: rgb(255, 0, 0);
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #4a80f5 0%,
+    #9bbff4 45%,
+    #ffffff 50%,
+    #75b2ef 55%,
+    #4a80f5 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 10s linear infinite;
+  display: inline-block;
+      font-size: 190px;
 }
 
-#mySVG {
-  position: absolute;
-  top: 15%;
-  width: 100%;
-  height: 100vh;
-  margin-left: -50px;
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 
-.st0 {
-  fill: none;
-  stroke-dashoffset: 3px;
-  stroke: red;
-  stroke-width: 20;
-  stroke-miterlimit: 10;
-  stroke-dasharray: 20;
+@media screen and (max-width: 1023px) {
+  .animate-charcter {
+    font-size: 40px;
+  }
 }
 
-.progressMainWrapper {
-  background-color: black;
-  height: 15px;
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-.progressMainStyle {
-  heigth: 15px;
-  background-color: aqua;
-  width: 15%;
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(197, 118, 0); 
 }
