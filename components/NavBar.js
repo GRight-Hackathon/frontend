@@ -75,7 +75,7 @@ export default function NavBar() {
                                 <Link href="/map">Map</Link>
                             </li>
                             <li className="text-white-600 marker:link link-underline link-underline-black">
-                                <Link href="/aboutus">AboutUs</Link>
+                                <Link href="/aboutus">About Us</Link>
                             </li>
                             <li className="text-white-600 marker:link link-underline link-underline-black">
                                 <Link href="https://github.com/GRight-Hackathon/frontend">GitHub</Link>
