@@ -75,7 +75,7 @@ export default function NavBar() {
                                 <Link href="/">Home</Link>
                             </li>
                             <li className="text-white-600 marker:link link-underline link-underline-black">
-                                <Link href="/profile">Profile</Link>
+                                <Link href="/map">map</Link>
                             </li>
                         </ul>
                     </div>
