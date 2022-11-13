@@ -2,7 +2,6 @@ import React, { useRef } from 'react';
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 
 import Image from 'next/image';
-import background from '../public/background.png';
 
 const url = (name, wrap) => 
     `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
@@ -88,7 +87,6 @@ export default function Landing() {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            backgroundImage: `url(${background})`,
             backgroundSize: `cover`,
           }}>
             <div className="flex flex-col content-center justify-center pt-12">
