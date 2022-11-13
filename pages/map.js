@@ -44,16 +44,16 @@ export default function Map() {
           travelMode: google.maps.TravelMode.DRIVING,
         })
         
-        //console.log(results)
+        console.log(results)
 
         let steps = results.routes[0].legs[0].steps;
         let leftTurnOnlyResults = []
         for (let i = 0; i < steps.length; i++) {
-            if (steps[i].maneuver.includes('left')) {
+            if (!steps[i].maneuver.includes('right')) {
                 leftTurnOnlyResults.push(steps[i]);
             }
         }
-        //console.log(leftTurnOnlyResults)
+        console.log(leftTurnOnlyResults)
         results.routes[0].legs[0].steps = leftTurnOnlyResults
         setDirectionsResponse(results)
         

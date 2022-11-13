@@ -72,10 +72,13 @@ export default function NavBar() {
                                 </Link>
                             </li>
                             <li className="text-white-600 marker:link link-underline link-underline-black">
-                                <Link href="/">Home</Link>
+                                <Link href="/map">Map</Link>
                             </li>
                             <li className="text-white-600 marker:link link-underline link-underline-black">
-                                <Link href="/map">map</Link>
+                                <Link href="/aboutus">AboutUs</Link>
+                            </li>
+                            <li className="text-white-600 marker:link link-underline link-underline-black">
+                                <Link href="https://github.com/GRight-Hackathon/frontend">GitHub</Link>
                             </li>
                         </ul>
                     </div>
