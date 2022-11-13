@@ -3,7 +3,8 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['awv3node-homepage.surge.sh']
+    unoptimized: true,
+    domains: ['awv3node-homepage.surge.sh'],
   }
 }
 
