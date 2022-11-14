@@ -83,6 +83,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [![React][React.js]][React-url]
 * [![Firebase][Firebase]][Firebase-url]
 * [![Tailwind][Tailwind]][Tailwind-url]
+* [![NextJS][NextJS]][NextJS-url]
 * [![GoogleMaps][GoogleMaps]][GoogleMaps-url]
 
 
@@ -196,6 +197,8 @@ Project Link: [GitHub](https://github.com/GRight-Hackathon/frontend)
 [Firebase-url]: https://firebase.google.com/
 [Tailwind]: https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white
 [Tailwind-url]: https://tailwindcss.com/
+[NextJS]: https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white
+[NextJS-url]: https://nextjs.org/
 [GoogleMaps]: https://img.shields.io/badge/Google%20Maps-%234285F4.svg?style=for-the-badge&logo=google-maps&logoColor=white
 [GoogleMaps-url]: https://mapsplatform.google.com/why-google/
 
