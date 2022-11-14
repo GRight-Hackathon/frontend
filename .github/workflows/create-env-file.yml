@@ -1,0 +1,12 @@
+name: Create env file
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      name: Create env file
+      - env:
+          NEXT_PUBLIC_GOOGLE_MAPS_API_KEY: ${{ secrets.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY }}
+          if:  env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY == '***'
+          run: echo "Wrong API KEY!"
