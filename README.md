@@ -148,11 +148,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <h3>Proposed implementation</h3>
 
-<<<<<<< HEAD
 ![Algorithm Screenshot][algorithm-screenshot]
-=======
-![Algorithm Screen Shot][algorithm-screenshot]
->>>>>>> 18962ee9b506b34a811a1a74286357a660479f60
 
 1. In an ideal scenario, we hope to implement GRight with the following algorithm.
 
