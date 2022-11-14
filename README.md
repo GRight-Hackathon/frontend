@@ -145,7 +145,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <h3>Proposed implementation</h3>
 
-[algorithm-screenshot]
+![Algorithm Screen Shot][algorithm-screenshot]
 
 1. In an ideal scenario, we hope to implement GRight with the following algorithm.
 
