@@ -19,7 +19,7 @@
   <p align="center">
     An app to help reduce fuel consumption
     <br />
-    <a href="https://github.com/jonjon98/donateit/"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/GRight-Hackathon/frontend/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://www.youtube.com/watch?v=Xgsot9SubOM">View Video Demo</a>
@@ -171,7 +171,13 @@ Jonathan - [Linkedin](https://www.linkedin.com/in/jonjon98)
 
 Jason  - [Linkedin](https://www.linkedin.com/in/ja-sony/)
 
-Project Link: [https://github.com/jonjon98/donateit](https://github.com/your_username/repo_name)
+Eugene - [LinkedIn](https://www.linkedin.com/in/eugenetayyj/)
+
+Shaune - [LinkedIn](https://www.linkedin.com/in/shauneang/)
+
+Yuan Jing - []()
+
+Project Link: [GitHub](https://github.com/GRight-Hackathon/frontend)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
