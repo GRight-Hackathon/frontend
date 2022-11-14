@@ -26,9 +26,9 @@
     ·
     <a href="https://gright-7442b.web.app//">Try Demo deployed on Firebase</a>
     ·
-    <a href="mailto: donateitlifehack@gmail.com">Report Bug</a>
+    <a href="mailto: infinitysparkteam@gmail.com">Report Bug</a>
     ·
-    <a href="mailto: donateitlifehack@gmail.com">Request Feature</a>
+    <a href="https://docs.google.com/presentation/d/11za33qSPSJkHCf1ojcrsJbygcbrPvbRR39v5Vu_4zRo/edit?usp=sharing">View Explanation</a>
   </p>
 </div>
 
@@ -67,7 +67,10 @@
 [![Landing Page Screen Shot][landing-screenshot]](https://gright-7442b.web.app/)
 
 <h3>Background</h3>
-In left-hand driving countries, left-hand turns are especially dangerous and unsafe because they usually involve the vehicle turning against a flow of oncoming vehicles. In the following article by [CNN](https://edition.cnn.com/2017/02/16/world/ups-trucks-no-left-turns/index.html), it is mentioned that a study on crash factors actually has "left turning" as one of the leading critical pre-crash events.
+In left-hand driving countries, left-hand turns are especially dangerous and unsafe because they usually involve the vehicle turning against a flow of oncoming 
+vehicles. 
+
+In the following article by [CNN](https://edition.cnn.com/2017/02/16/world/ups-trucks-no-left-turns/index.html), it is mentioned that a study on crash factors actually has "left turning" as one of the leading critical pre-crash events.
 
 UPS has already built a way to avoid left turns, using a method called "loop dispatch". Unfortunately, this is not readily available for a large range of consumers. Hence we have decided to come up with a way to use Google Map's API to allow day-to-day consumers to experience this optimisation.
 
@@ -145,7 +148,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <h3>Proposed implementation</h3>
 
-[algorithm-screenshot]
+![Algorithm Screenshot][algorithm-screenshot]
 
 1. In an ideal scenario, we hope to implement GRight with the following algorithm.
 
