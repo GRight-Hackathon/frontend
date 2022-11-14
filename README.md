@@ -17,7 +17,7 @@
   <h3 align="center">GRight</h3>
 
   <p align="center">
-    An app to help reduce the wasteage that Singaporeans produce!
+    An app to help reduce fuel consumption
     <br />
     <a href="https://github.com/jonjon98/donateit/"><strong>Explore the docs »</strong></a>
     <br />
