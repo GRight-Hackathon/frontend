@@ -83,6 +83,8 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * [![React][React.js]][React-url]
 * [![Firebase][Firebase]][Firebase-url]
 * [![Tailwind][Tailwind]][Tailwind-url]
+* [![GoogleMaps][GoogleMaps]][GoogleMaps-url]
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
