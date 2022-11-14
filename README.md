@@ -67,8 +67,12 @@
 [![Landing Page Screen Shot][landing-screenshot]](https://gright-7442b.web.app/)
 
 <h3>Background</h3>
+<<<<<<< HEAD
 In left-hand driving countries, left-hand turns are especially dangerous and unsafe because they usually involve the vehicle turning against a flow of oncoming 
 vehicles. 
+=======
+In left-hand driving countries, left-hand turns are especially dangerous and unsafe because they usually involve the vehicle turning against a flow of oncoming vehicles. 
+>>>>>>> 18962ee9b506b34a811a1a74286357a660479f60
 
 In the following article by [CNN](https://edition.cnn.com/2017/02/16/world/ups-trucks-no-left-turns/index.html), it is mentioned that a study on crash factors actually has "left turning" as one of the leading critical pre-crash events.
 
@@ -148,7 +152,11 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <h3>Proposed implementation</h3>
 
+<<<<<<< HEAD
 ![Algorithm Screenshot][algorithm-screenshot]
+=======
+![Algorithm Screen Shot][algorithm-screenshot]
+>>>>>>> 18962ee9b506b34a811a1a74286357a660479f60
 
 1. In an ideal scenario, we hope to implement GRight with the following algorithm.
 
