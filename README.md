@@ -32,8 +32,6 @@
   </p>
 </div>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -60,17 +58,16 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
+
 <h3>Login Page</h3>
 
 [![Login Page Screen Shot][login-screenshot]](https://donateit.netlify.app/login)
+
 <h3>Background</h3>
 Explain motivation here
-
-
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -80,18 +77,16 @@ Explain motivation here
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![React][React.js]][React-url]
-* [![Firebase][Firebase]][Firebase-url]
-* [![Tailwind][Tailwind]][Tailwind-url]
-* [![NextJS][NextJS]][NextJS-url]
-* [![GoogleMaps][GoogleMaps]][GoogleMaps-url]
-
+- [![React][react.js]][react-url]
+- [![Firebase][firebase]][firebase-url]
+- [![Tailwind][tailwind]][tailwind-url]
+- [![NextJS][nextjs]][nextjs-url]
+- [![GoogleMaps][googlemaps]][googlemaps-url]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
@@ -99,11 +94,12 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+
+- npm
   ```sh
   npm install npm@latest -g
   ```
-* firebase account
+- firebase account
 
 ### Installation
 
@@ -121,10 +117,10 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
-
 <!-- USAGE EXAMPLES -->
+
 ## Usage
+
 <h3>Home Page</h3>
 
 [![Home Page Screen Shot][home-screenshot]](https://donateit.netlify.app/)
@@ -142,10 +138,10 @@ _Below is an example of how you can instruct your audience on installing and set
 <h3>Proposed implementation</h3>
 
 [![Product Page Screen Shot][products-screenshot]](https://donateit.netlify.app/listing)
+
 1. Click on the products tab at the top to navigate to the rewards page.
 
-[![Product Popup Page Screen Shot][products-popup-screenshot]](https://donateit.netlify.app/listing)
-2. Here, you can purchase products which others sell using reward points.
+[![Product Popup Page Screen Shot][products-popup-screenshot]](https://donateit.netlify.app/listing) 2. Here, you can purchase products which others sell using reward points.
 
 <h3>Landing Page</h3>
 
@@ -166,17 +162,18 @@ _Below is an example of how you can instruct your audience on installing and set
 2. Here, you can look at your previous listings/posts.
 
 <!-- CONTACT -->
+
 ## Contact
 
 Jonathan - [Linkedin](https://www.linkedin.com/in/jonjon98)
 
-Jason  - [Linkedin](https://www.linkedin.com/in/ja-sony/)
+Jason - [Linkedin](https://www.linkedin.com/in/ja-sony/)
 
 Eugene - [LinkedIn](https://www.linkedin.com/in/eugenetayyj/)
 
 Shaune - [LinkedIn](https://www.linkedin.com/in/shauneang/)
 
-Yuan Jing - []()
+Yuan Jing - [LinkedIn](https://www.linkedin.com/in/chow-yuan-jing/)
 
 Project Link: [GitHub](https://github.com/GRight-Hackathon/frontend)
 
@@ -184,21 +181,21 @@ Project Link: [GitHub](https://github.com/GRight-Hackathon/frontend)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [login-screenshot]: ./src/media/loginpage.png
 [home-screenshot]: ./src/media/homepage.png
-[home-popup-screenshot]:./src/media/homepopup.png
-[products-screenshot]:/src/media/productspage.png
-[products-popup-screenshot]:/src/media/productspopup.png
+[home-popup-screenshot]: ./src/media/homepopup.png
+[products-screenshot]: /src/media/productspage.png
+[products-popup-screenshot]: /src/media/productspopup.png
 [rewards-screenshot]: ./src/media/rewardspage.png
 [profile-screenshot]: ./src/media/profilepage.png
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[Firebase]: https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase
-[Firebase-url]: https://firebase.google.com/
-[Tailwind]: https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white
-[Tailwind-url]: https://tailwindcss.com/
-[NextJS]: https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white
-[NextJS-url]: https://nextjs.org/
-[GoogleMaps]: https://img.shields.io/badge/Google%20Maps-%234285F4.svg?style=for-the-badge&logo=google-maps&logoColor=white
-[GoogleMaps-url]: https://mapsplatform.google.com/why-google/
-
+[react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[react-url]: https://reactjs.org/
+[firebase]: https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase
+[firebase-url]: https://firebase.google.com/
+[tailwind]: https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white
+[tailwind-url]: https://tailwindcss.com/
+[nextjs]: https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white
+[nextjs-url]: https://nextjs.org/
+[googlemaps]: https://img.shields.io/badge/Google%20Maps-%234285F4.svg?style=for-the-badge&logo=google-maps&logoColor=white
+[googlemaps-url]: https://mapsplatform.google.com/why-google/
