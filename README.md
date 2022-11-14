@@ -10,7 +10,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/jonjon98/donateit/">
+  <a href="https://github.com/GRight-Hackathon/frontend/">
     <img src="./src/media/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
@@ -24,7 +24,7 @@
     <br />
     <a href="https://www.youtube.com/watch?v=Xgsot9SubOM">View Video Demo</a>
     ·
-    <a href="https://donateit.netlify.app/">Try Demo deployed on Netlifly</a>
+    <a href="https://gright-7442b.web.app//">Try Demo deployed on Firebase</a>
     ·
     <a href="mailto: donateitlifehack@gmail.com">Report Bug</a>
     ·
@@ -68,8 +68,7 @@
 
 [![Login Page Screen Shot][login-screenshot]](https://donateit.netlify.app/login)
 <h3>Background</h3>
-In recent years, there has been an increase in the products bought by individuals in developed countries due to the advent of online shopping. This has been made more prevalent due the pandemic causing more people to purchase online goods. This has caused an increase in the number of impulse purchases leading to more items being discarded. Therefore causing the wastage of the population as a whole to increase.
-We have decided to come up with this website to allow users to be more environmentally friendly and donate their items to others when they no longer need them.
+Explain motivation here
 
 
 
@@ -83,7 +82,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 * [![React][React.js]][React-url]
 * [![Firebase][Firebase]][Firebase-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [![Tailwind][Tailwind]][Tailwind-url]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -137,7 +136,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 4. Each upvote on a user's post would give them reward points which they could use to claim rewards.
 
-<h3>Product Page</h3>
+<h3>Proposed implementation</h3>
 
 [![Product Page Screen Shot][products-screenshot]](https://donateit.netlify.app/listing)
 1. Click on the products tab at the top to navigate to the rewards page.
@@ -145,7 +144,7 @@ _Below is an example of how you can instruct your audience on installing and set
 [![Product Popup Page Screen Shot][products-popup-screenshot]](https://donateit.netlify.app/listing)
 2. Here, you can purchase products which others sell using reward points.
 
-<h3>Rewards Page</h3>
+<h3>Landing Page</h3>
 
 [![Rewards Page Screen Shot][rewards-screenshot]](https://donateit.netlify.app/rewards)
 
@@ -155,7 +154,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<h3>Profile Page</h3>
+<h3>Maps Page</h3>
 
 [![Profile Page Screen Shot][profile-screenshot]](https://donateit.netlify.app/profile)
 
@@ -169,8 +168,6 @@ _Below is an example of how you can instruct your audience on installing and set
 Jonathan - [Linkedin](https://www.linkedin.com/in/jonjon98)
 
 Jason  - [Linkedin](https://www.linkedin.com/in/ja-sony/)
-
-Richie - [Linkedin](https://www.linkedin.com/in/richie-ang/)
 
 Project Link: [https://github.com/jonjon98/donateit](https://github.com/your_username/repo_name)
 
@@ -187,7 +184,10 @@ Project Link: [https://github.com/jonjon98/donateit](https://github.com/your_use
 [profile-screenshot]: ./src/media/profilepage.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
-[Firebase]: https://img.shields.io/badge/firebase-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Firebase-url]: https://firebase.google.com/?gclid=Cj0KCQjwzqSWBhDPARIsAK38LY-VJ9DvrtM6s3UKVuVQ0dNTjYIczynCQigxyoATUqL74p0F21LV25kaAiswEALw_wcB&gclsrc=aw.ds
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
+[Firebase]: https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase
+[Firebase-url]: https://firebase.google.com/
+[Tailwind]: https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white
+[Tailwind-url]: https://tailwindcss.com/
+[GoogleMaps]: https://img.shields.io/badge/Google%20Maps-%234285F4.svg?style=for-the-badge&logo=google-maps&logoColor=white
+[GoogleMaps-url]: https://mapsplatform.google.com/why-google/
+
