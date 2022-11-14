@@ -62,12 +62,14 @@
 
 ## About The Project
 
-<h3>Login Page</h3>
+<h3>Landing Page</h3>
 
-[![Login Page Screen Shot][login-screenshot]](https://donateit.netlify.app/login)
+[![Landing Page Screen Shot][landing-screenshot]](https://gright-7442b.web.app/)
 
 <h3>Background</h3>
-Explain motivation here
+In left-hand driving countries, left-hand turns are especially dangerous and unsafe because they usually involve the vehicle turning against a flow of oncoming vehicles. In the following article by [CNN](https://edition.cnn.com/2017/02/16/world/ups-trucks-no-left-turns/index.html), it is mentioned that a study on crash factors actually has "left turning" as one of the leading critical pre-crash events.
+
+UPS has already built a way to avoid left turns, using a method called "loop dispatch". Unfortunately, this is not readily available for a large range of consumers. Hence we have decided to come up with a way to use Google Map's API to allow day-to-day consumers to experience this optimisation.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -99,7 +101,8 @@ This is an example of how to list things you need to use the software and how to
   ```sh
   npm install npm@latest -g
   ```
-- firebase account
+
+- Google Maps Platform: follow the tutorial [here](https://developers.google.com/maps/get-started)
 
 ### Installation
 
@@ -107,13 +110,18 @@ _Below is an example of how you can instruct your audience on installing and set
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/GRight-Hackathon/frontend.git
    ```
 2. Install NPM packages
    ```sh
    npm install
    ```
-3. Get your firebase credentials and store it in an `.env` file in the root directory of the project
+3. Get your Google Maps API key and store it in an `.env` file in the root directory of the project under the name NEXT_PUBLIC_GOOGLE_MAPS_API_KEY. For example this should be how your `.env` file looks like:
+    ```sh
+    NEXT_PUBLIC_GOOGLE_MAPS_API_KEY="INSERT_YOUR_API_KEY_HERE"
+    ```
+4. If you want to try our a dev deployment just run `npm run dev` to start this NextJS application.
+5. If you need to build for production, just run `npm run build` to build a production ready application.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -123,43 +131,39 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <h3>Home Page</h3>
 
-[![Home Page Screen Shot][home-screenshot]](https://donateit.netlify.app/)
+[![Landing Page Screen Shot][landing-screenshot]](https://gright-7442b.web.app/)
 
-1. Run `npm start` to get it running locally.
+1. Run `npm run dev` to get it running locally.
 
-2. Login through your google account and it would bring you to the home page.
+2. Scroll to the bottom and click on `Get Started`
 
-[![Home Popup Screen Shot][home-popup-screenshot]](https://donateit.netlify.app/)
+[![Maps Page Screen Shot][maps-screenshot]](https://gright-7442b.web.app/map)
 
-3. Here, you are able to find the locations of all the recycling points in Singapore and also be able to look at posts from other users who are doing the recycling.
+3. Here, you are able to view the map in its entirety. 
 
-4. Each upvote on a user's post would give them reward points which they could use to claim rewards.
+4. Simply input your origin and destination and GRight will assit you and calculate an optimised route.
 
 <h3>Proposed implementation</h3>
 
-[![Product Page Screen Shot][products-screenshot]](https://donateit.netlify.app/listing)
+[algorithm-screenshot]
 
-1. Click on the products tab at the top to navigate to the rewards page.
+1. In an ideal scenario, we hope to implement GRight with the following algorithm.
 
-[![Product Popup Page Screen Shot][products-popup-screenshot]](https://donateit.netlify.app/listing) 2. Here, you can purchase products which others sell using reward points.
+2. After querying the API to get the route from Google Maps, we need to modify its route. 
 
-<h3>Landing Page</h3>
+3. Google Maps returns the steps of the of the route as latitude and longitude coordinates.
 
-[![Rewards Page Screen Shot][rewards-screenshot]](https://donateit.netlify.app/rewards)
+4. We will instead use the roads right before each turn (or junction) as our nodes for the graph we are going to construct.
 
-1. Click on the rewards tab at the top to navigate to the rewards page.
+5. Each node is going to have 4 nodes based on direction (North, Sourth, East, West).
 
-2. Here, you can claim rewards.
+6. To construct the graph, we form an edge between nodes only if N of a node can reach the S of the next node OR <br/>
+   E of a node can reach the W of the next node (**Assuming** the person is moving from N to S initially).
+
+7. Lastly, we make use of Djikstra's algorithm to calculate the most optimised path.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<h3>Maps Page</h3>
-
-[![Profile Page Screen Shot][profile-screenshot]](https://donateit.netlify.app/profile)
-
-1. Click on the profile tab at the top to navigate to the profile page.
-
-2. Here, you can look at your previous listings/posts.
 
 <!-- CONTACT -->
 
@@ -182,13 +186,9 @@ Project Link: [GitHub](https://github.com/GRight-Hackathon/frontend)
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[login-screenshot]: ./src/media/loginpage.png
-[home-screenshot]: ./src/media/homepage.png
-[home-popup-screenshot]: ./src/media/homepopup.png
-[products-screenshot]: /src/media/productspage.png
-[products-popup-screenshot]: /src/media/productspopup.png
-[rewards-screenshot]: ./src/media/rewardspage.png
-[profile-screenshot]: ./src/media/profilepage.png
+[landing-screenshot]: ./public/Landing.png
+[maps-screenshot]: ./public/Maps.png
+[algorithm-screenshot]: ./public/Algorithm.png
 [react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [react-url]: https://reactjs.org/
 [firebase]: https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase
