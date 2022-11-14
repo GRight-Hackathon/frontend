@@ -11,10 +11,10 @@
 <br />
 <div align="center">
   <a href="https://github.com/GRight-Hackathon/frontend/">
-    <img src="./src/media/logo.svg" alt="Logo" width="80" height="80">
+    <img src="./public/gright.svg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">DonateIt</h3>
+  <h3 align="center">GRight</h3>
 
   <p align="center">
     An app to help reduce the wasteage that Singaporeans produce!
