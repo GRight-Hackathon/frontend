@@ -15,3 +15,8 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_GRIGHT_7442B }}'
           projectId: gright-7442b
+      - name: Create env file
+        env:
+          NEXT_PUBLIC_GOOGLE_MAPS_API_KEY: ${{ secrets.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY }}
+          if:  env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY == '***'
+          run: echo "Wrong API KEY!"
