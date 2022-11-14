@@ -22,7 +22,7 @@
     <a href="https://github.com/GRight-Hackathon/frontend/"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://www.youtube.com/watch?v=Xgsot9SubOM">View Video Demo</a>
+    <a href="https://www.youtube.com/">View Video Demo</a>
     ·
     <a href="https://gright-7442b.web.app//">Try Demo deployed on Firebase</a>
     ·
