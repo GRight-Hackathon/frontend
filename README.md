@@ -51,10 +51,8 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -167,6 +165,14 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<!-- ROADMAP -->
+
+## Roadmap
+We hope to further expand on just simply filtering the directions that we receive from Google Map's API, but rather use a graphing algorithm to construct a graph only encompassing of the turns that we want the drivers to take. The explanation can be found on our slides [here](https://docs.google.com/presentation/d/11za33qSPSJkHCf1ojcrsJbygcbrPvbRR39v5Vu_4zRo/edit?usp=sharing).
+
+Besides this, Machine Learning features can be implemented to calculated the most congested / frequently used roads to reduce the amount of stops, which can further increase fuel efficiency.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
 
@@ -183,6 +189,17 @@ Shaune - [LinkedIn](https://www.linkedin.com/in/shauneang/)
 Yuan Jing - [LinkedIn](https://www.linkedin.com/in/chow-yuan-jing/)
 
 Project Link: [GitHub](https://github.com/GRight-Hackathon/frontend)
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS --> 
+
+## Acknowledgements
+We made use of the following libraries in our application.
+
+1. [@react-spring/parallax](https://www.npmjs.com/package/@react-spring/parallax)
+2. [@react-google-maps/api](https://www.npmjs.com/package/@react-google-maps/api)
+3. [tailwindcss](https://tailwindcss.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
