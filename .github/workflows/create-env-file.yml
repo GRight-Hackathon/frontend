@@ -1,0 +1,5 @@
+name: Create env file
+  run: |
+    touch .env
+    echo NEXT_PUBLIC_GOOGLE_MAPS_API_KEY=${{ secrets.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY }} >> .env
+    cat .env
