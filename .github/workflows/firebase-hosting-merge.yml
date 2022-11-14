@@ -18,3 +18,5 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_GRIGHT_7442B }}'
           channelId: live
           projectId: gright-7442b
+        env:
+          NEXT_PUBLIC_GOOGLE_MAPS_API_KEY: ${{ secrets.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY }}
